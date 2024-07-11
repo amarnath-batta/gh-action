@@ -2,13 +2,13 @@ name: First Workflow
 on: workflow_dispatch
 jobs: 
   first-job:
-    runs-on: 
-      labels:
-        strategy:
-          matrix:
-            java-version: 17
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Project
         uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
       - name: Clean Install
         run: mvn clean install
