@@ -2,10 +2,11 @@ name: First Workflow
 on: workflow_dispatch
 jobs: 
   first-job:
-    runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          java-version: 17
+    runs-on: 
+      labels:
+        strategy:
+          matrix:
+            java-version: 17
     steps:
       - name: Checkout
         uses: actions/checkout@v3
