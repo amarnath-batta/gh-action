@@ -13,5 +13,5 @@ jobs:
           java-version: '11'
       - name: Run Sample Class
         run: | 
-            javac com.example.demo.SampleClass.java
-            java com.example.demo.SampleClass
+            javac Sample.java
+            java Sample
