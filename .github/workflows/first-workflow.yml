@@ -12,7 +12,7 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '11'
       - name: Grep command
-        run: grep -Pnr --include=*.properties '[=:]\s*(\w*aei.tla.uprr.com|\w*rym.tla.uprr.com)'
+        run: grep -Pnr --include=*.properties '[=:]\s*(\w*aei.abc.amar.com|\w*rym.abc.amar.com)'
       - name: Run Sample Class
         run: | 
             cd src/main/java
