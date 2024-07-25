@@ -7,11 +7,4 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v3    
       - name: Search
-        run : grep -Pnr --include=*.properties demo
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-      - name: Clean Install
-        run: mvn clean install
+        run : grep -Pnr --include=*.properties `(?i)^.*(demo)\\s*[=:]\\s*(?!cyberark|false)\\S+\r?$`    
