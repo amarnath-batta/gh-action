@@ -16,5 +16,5 @@ jobs:
             cd src/main/java
             javac Sample.java
             java Sample
-        - name: Grep command
-          run: grep -r \"demo\" application.properties
+      - name: Grep command
+        run: grep -r \"demo\" application.properties
