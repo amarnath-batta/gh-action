@@ -14,5 +14,6 @@ jobs:
       - name: Run Sample Class
         run: | 
             cd src/main/java
+            lr
             javac Sample.java
             java Sample
