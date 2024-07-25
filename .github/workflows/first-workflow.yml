@@ -7,4 +7,4 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v3    
       - name: Search
-        run : grep -Pnr --include=*.properties "dev.tad.tla.abc.com"    
+        run : grep -Pnr --include=*.properties "*.tad.tla.abc.com"    
