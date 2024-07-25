@@ -13,5 +13,6 @@ jobs:
           java-version: '11'
       - name: Run Sample Class
         run: | 
+            cd src/main/java
             javac Sample.java
             java Sample
