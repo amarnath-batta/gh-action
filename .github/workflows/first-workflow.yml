@@ -12,7 +12,7 @@ jobs:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '11'
       - name: Grep command
-        run: grep -r \"demo\" application.properties
+        run: grep -r "demo" application.properties
       - name: Run Sample Class
         run: | 
             cd src/main/java
