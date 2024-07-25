@@ -11,7 +11,7 @@ public class Sample {
         pbArguments.add("grep");
         pbArguments.add(" -Pnr ");
         pbArguments.add(" --include=*.properties ");
-        pbArguments.add(" (?i)^.*(password|pwd|passwd)\\\\s*[=:]\\\\s*(?!cyberark|false)\\\\S+\\r?$");
+        pbArguments.add(" (?i)^.*(demo)\\\\s*[=:]\\\\s*(?!cyberark|false)\\\\S+\\r?$");
         pbGrep.command(pbArguments);
         Process pgrep = pbGrep.start();
         pgrep.waitFor();
