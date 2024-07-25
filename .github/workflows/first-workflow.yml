@@ -7,5 +7,5 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v3          
       - name: Grep command
-        run: grep -Pnr --include=*.properties '\w*[=:]aerod4.aei.abc.amar.com'
+        run: grep -Pnr --include=*.properties '\w*[=:]\w*.aei.abc.amar.com'
 #(\w*aei.abc.amar.com|\w*rym.abc.amar.com)
