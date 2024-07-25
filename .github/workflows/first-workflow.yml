@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3    
+      - name: Search
+        run : grep -Pnr --include=*.properties '(?i)^.*(dev.mad.tla.abc.com)\\s*[=:]\\s*(?!cyberark|false)\\S+\r?$'
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
