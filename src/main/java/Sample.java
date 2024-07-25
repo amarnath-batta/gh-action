@@ -7,12 +7,7 @@ public class Sample {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		ProcessBuilder pbGrep = new ProcessBuilder();
 		List<String> pbArguments = new ArrayList<>();
-
-        pbArguments.add("grep");
-        pbArguments.add(" -Pnr ");
-        pbArguments.add(" --include=*.properties ");
-        pbArguments.add("demo");
-        pbGrep.command(pbArguments);
+        pbGrep.command("grep -Pnr --include=*.properties demo");
         Process pgrep = pbGrep.start();
         pgrep.waitFor();
         System.out.println("Exit value is : " + pgrep.exitValue());
