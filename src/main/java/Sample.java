@@ -1,4 +1,4 @@
-import java.io.IOException;
+oimport java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class Sample {
         pbArguments.add("grep");
         pbArguments.add(" -Pnr ");
         pbArguments.add(" --include=*.properties ");
-        pbArguments.add(" (?i)^.*(demo)\\\\s*[=:]\\\\s*(?!cyberark|false)\\\\S+\\r?$");
+        pbArguments.add("demo");
         pbGrep.command(pbArguments);
         Process pgrep = pbGrep.start();
         pgrep.waitFor();
