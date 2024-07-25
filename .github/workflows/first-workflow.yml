@@ -5,17 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3    
-      - name: Install Java
-        uses : actions/setup-java@v4
-        with:
-          distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '11'
+        uses: actions/checkout@v3          
       - name: Grep command
         run: grep -Pnr --include=*.properties '=(\w*aei.abc.amar.com|\w*rym.abc.amar.com)'
-      - name: Run Sample Class
-        run: | 
-            cd src/main/java
-            javac Sample.java
-            java Sample
-      
