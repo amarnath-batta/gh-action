@@ -13,7 +13,7 @@ public class SampleClassTest {
 	public void testAdd()  throws IOException, InterruptedException  {
 		ProcessBuilder pbGrep = new ProcessBuilder();
 		List<String> pbArguments = new ArrayList<>();
-        pbGrep.command("grep -Pnr --include=*.properties (demo|dime) ./home/runner/work/gh-action/gh-action");
+        pbGrep.command("grep -i demo pom.xml");
         Process pgrep = pbGrep.start();
         pgrep.waitFor();
         System.out.println("Exit value is : " + pgrep.exitValue());
