@@ -11,7 +11,7 @@ public class SampleClassTest {
 	
 	@Test
 	public void testAdd()  throws IOException, InterruptedException  {
-		ProcessBuilder pbGrep = new ProcessBuilder("ls");
+		ProcessBuilder pbGrep = new ProcessBuilder("grep -i demo");
 		pbGrep.directory(new File("/home/runner/work/gh-action/gh-action"));
 		List<String> pbArguments = new ArrayList<>();
         //pbGrep.command("grep -i demo application.properties");
