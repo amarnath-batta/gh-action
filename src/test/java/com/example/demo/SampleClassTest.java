@@ -13,7 +13,7 @@ public class SampleClassTest {
 	public void testAdd()  throws IOException, InterruptedException  {
 		ProcessBuilder pbGrep = new ProcessBuilder("ls -l");
 		pbGrep.directory(new File("/home/runner/work/gh-action/gh-action"));
-		processBuilder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+		pbGrep.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 		List<String> pbArguments = new ArrayList<>();
         //pbGrep.command("grep -i demo application.properties");
 	//pbGrep.command("ls -l");
